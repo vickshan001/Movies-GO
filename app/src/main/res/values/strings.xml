@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Movies GO</string>
+    <string name="movies">Movies</string>
+    <string name="most_popular_movies">Most Popular Movies</string>
+    <string name="now_playing_movies">Now Playing Movies</string>
+    <string name="upcoming_movies">Upcoming Movies</string>
+    <string name="top_rated_movies">Top Rated Movies</string>
+    <string name="tv_shows">TV Shows</string>
+    <string name="most_popular_tv_shows">Most Popular TV Shows</string>
+    <string name="top_rated_tv_shows">Top Rated TV Shows</string>
+    <string name="on_the_air_tv_shows">On The Air TV Shows</string>
+    <string name="text_info">This app fully uses the API of TMDB (www.themoviedb.org), but is not supported by TMDB.</string>
+    <string name="enter_keyword">Enter query</string>
+    <string name="no_results">No results</string>
+    <string name="something_wrong">Something wrong with connection</string>
+    <string name="search_movie_or_tv_show">Search Movie or TV Show</string>
+</resources>

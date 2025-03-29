@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textTvPopular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/most_popular_tv_shows"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/rvTvPopular"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTvPopular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            android:paddingStart="0dp"
+            android:paddingEnd="40dp"
+            android:scrollbars="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTvPopular" />
+
+        <ProgressBar
+            android:id="@+id/loadingTvPopular"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/rvTvPopular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/rvTvPopular" />
+
+        <ProgressBar
+            android:id="@+id/loadingMainTvPopular"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/rvTvPopular"
+            app:layout_constraintEnd_toEndOf="@id/rvTvPopular"
+            app:layout_constraintStart_toStartOf="@id/rvTvPopular"
+            app:layout_constraintTop_toTopOf="@id/rvTvPopular" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textTvTopRated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/top_rated_tv_shows"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/rvTvTopRated"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTvTopRated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            android:paddingStart="0dp"
+            android:paddingEnd="40dp"
+            android:scrollbars="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTvTopRated" />
+
+        <ProgressBar
+            android:id="@+id/loadingTvTopRated"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/rvTvTopRated"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/rvTvTopRated" />
+
+        <ProgressBar
+            android:id="@+id/loadingMainTvTopRated"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/rvTvTopRated"
+            app:layout_constraintEnd_toEndOf="@id/rvTvTopRated"
+            app:layout_constraintStart_toStartOf="@id/rvTvTopRated"
+            app:layout_constraintTop_toTopOf="@id/rvTvTopRated" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textTvOnAir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/on_the_air_tv_shows"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/rvTvOnAir"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTvOnAir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            android:paddingStart="0dp"
+            android:paddingEnd="40dp"
+            android:scrollbars="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTvOnAir" />
+
+        <ProgressBar
+            android:id="@+id/loadingTvOnAir"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/rvTvOnAir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/rvTvOnAir" />
+
+        <ProgressBar
+            android:id="@+id/loadingMainTvOnAir"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/rvTvOnAir"
+            app:layout_constraintEnd_toEndOf="@id/rvTvOnAir"
+            app:layout_constraintStart_toStartOf="@id/rvTvOnAir"
+            app:layout_constraintTop_toTopOf="@id/rvTvOnAir" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
